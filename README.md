@@ -28,17 +28,15 @@ To run this project locally on your machine, follow these steps:
 
 ---
 
-## 🌐 Deployment Plan
+## 🌐 Deployment Architecture
 
-### Deploy to Vercel
-1. **Push to GitHub**: Commit your code and push the repository to GitHub.
-2. **Log in to Vercel**: Go to [vercel.com](https://vercel.com/) and sign in with your GitHub account.
-3. **Add New Project**: Click "Add New" -> "Project" and import your GitHub repository.
-4. **Configure Build Settings**:
-   - Framework Preset: `Vite`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. **Deploy**: Click the "Deploy" button. Vercel will automatically build and host your site.
+This portfolio has been successfully deployed to production using **Vercel**. The deployment pipeline is connected directly to my GitHub repository to enable Continuous Integration and Continuous Deployment (CI/CD). 
+
+### Vercel Configuration Settings Used:
+- **Framework Preset**: `Vite`
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Source Control**: Connected to GitHub repository for automated deployments on every commit.
 
 ---
 
