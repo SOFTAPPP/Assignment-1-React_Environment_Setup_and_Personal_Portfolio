@@ -28,11 +28,9 @@ To run this project locally on your machine, follow these steps:
 
 ---
 
-## 🌐 Deployment Plans
+## 🌐 Deployment Plan
 
-You can easily deploy this React application for free using either Vercel or Netlify.
-
-### Option A: Deploy to Vercel (Recommended)
+### Deploy to Vercel
 1. **Push to GitHub**: Commit your code and push the repository to GitHub.
 2. **Log in to Vercel**: Go to [vercel.com](https://vercel.com/) and sign in with your GitHub account.
 3. **Add New Project**: Click "Add New" -> "Project" and import your GitHub repository.
@@ -41,17 +39,6 @@ You can easily deploy this React application for free using either Vercel or Net
    - Build Command: `npm run build`
    - Output Directory: `dist`
 5. **Deploy**: Click the "Deploy" button. Vercel will automatically build and host your site.
-
-### Option B: Deploy to Netlify
-1. **Push to GitHub**: Ensure your code is pushed to a GitHub repository.
-2. **Log in to Netlify**: Go to [netlify.com](https://www.netlify.com/) and sign in with GitHub.
-3. **Add New Site**: Click "Add new site" -> "Import an existing project".
-4. **Connect to GitHub**: Authorize Netlify and select your repository.
-5. **Configure Build Settings**:
-   - Base directory: `/` (leave blank or as default)
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-6. **Deploy**: Click "Deploy site".
 
 ---
 
