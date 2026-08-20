@@ -55,13 +55,91 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 0 10%;
 }
 
 .header-content {
-  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
 }
+
+.header-text {
+  flex: 1;
+  text-align: left;
+}
+
+.tech-badges {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tech-badges span {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.terminal-container {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: left;
+}
+
+.terminal-header {
+  background: #2d2d2d;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+  margin-left: auto;
+  margin-right: auto;
+  color: #888;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.terminal-body {
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d4d4d4;
+}
+
+.terminal-body .keyword { color: #569cd6; }
+.terminal-body .function { color: #dcdcaa; }
+.terminal-body .string { color: #ce9178; }
+.terminal-body .number { color: #b5cea8; }
+.terminal-body .comment { color: #6a9955; }
+.terminal-body .indent { padding-left: 20px; }
 
 .title {
   font-size: 4rem;
@@ -285,6 +363,20 @@
 
   .title {
     font-size: 3rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .tech-badges {
+    justify-content: center;
   }
 
   .contact-container {
